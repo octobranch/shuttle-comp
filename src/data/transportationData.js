@@ -1,321 +1,238 @@
 export const transportationBrands = [
   {
-    id: 'uber',
-    name: 'Uber',
-    description: 'Global rideshare leader with extensive coverage',
-    rating: 4.5,
-    totalReviews: 2847563,
+    id: 'usa-transfers',
+    name: 'USA Transfers',
+    description: 'Top-rated private transfer service known for punctuality and reliability',
+    rating: 4.9,
+    totalReviews: 32450,
     pricing: {
-      baseFare: 2.50,
-      perMile: 1.75,
-      perMinute: 0.35
-    },
-    vehicleTypes: [
-      { name: 'UberX', capacity: 4 },
-      { name: 'Comfort', capacity: 4 },
-      { name: 'XL', capacity: 6 },
-      { name: 'Black', capacity: 4 },
-      { name: 'SUV', capacity: 6 }
-    ],
-    features: [
-      'Real-time tracking',
-      'Split fare option',
-      'Safety features with emergency button',
-      'Ride scheduling up to 30 days in advance',
-      'In-app tipping',
-      'Rewards program'
-    ],
-    availability: '10,000+ cities worldwide'
-  },
-  {
-    id: 'lyft',
-    name: 'Lyft',
-    description: 'Customer-focused rideshare with competitive pricing',
-    rating: 4.3,
-    totalReviews: 1567892,
-    pricing: {
-      baseFare: 2.00,
-      perMile: 1.65,
-      perMinute: 0.30
-    },
-    vehicleTypes: [
-      { name: 'Lyft', capacity: 4 },
-      { name: 'Shared', capacity: 2 },
-      { name: 'XL', capacity: 6 },
-      { name: 'Lux', capacity: 4 },
-      { name: 'Lux Black XL', capacity: 6 }
-    ],
-    features: [
-      'Women+ Connect feature',
-      'Round Up & Donate program',
-      'Price lock guarantee',
-      'Live ride tracking',
-      'Priority pickup locations',
-      'Carbon neutral rides'
-    ],
-    availability: '650+ cities in US and Canada'
-  },
-  {
-    id: 'via',
-    name: 'Via',
-    description: 'Shared rides focused on efficiency and affordability',
-    rating: 4.1,
-    totalReviews: 456234,
-    pricing: {
-      baseFare: 1.50,
-      perMile: 1.20,
-      perMinute: 0.25
-    },
-    vehicleTypes: [
-      { name: 'Shared Ride', capacity: 2 },
-      { name: 'Private Ride', capacity: 4 }
-    ],
-    features: [
-      'Lowest prices through ride sharing',
-      'Smart routing algorithm',
-      'Corporate partnerships',
-      'Monthly pass options',
-      'Eco-friendly fleet',
-      'Fixed route options'
-    ],
-    availability: '20+ cities worldwide'
-  },
-  {
-    id: 'gett',
-    name: 'Gett',
-    description: 'Professional black car and taxi service',
-    rating: 4.4,
-    totalReviews: 234567,
-    pricing: {
-      baseFare: 3.50,
-      perMile: 2.25,
-      perMinute: 0.45
-    },
-    vehicleTypes: [
-      { name: 'Black Car', capacity: 4 },
-      { name: 'SUV', capacity: 6 },
-      { name: 'Executive', capacity: 4 }
-    ],
-    features: [
-      'Professional licensed drivers',
-      'Business account options',
-      'No surge pricing',
-      'Premium vehicle standards',
-      'Corporate billing',
-      'Airport specialists'
-    ],
-    availability: '100+ cities in Europe and US'
-  },
-  {
-    id: 'curb',
-    name: 'Curb',
-    description: 'Licensed taxi service with app convenience',
-    rating: 4.0,
-    totalReviews: 567890,
-    pricing: {
-      baseFare: 3.00,
-      perMile: 2.50,
-      perMinute: 0.50
-    },
-    vehicleTypes: [
-      { name: 'Taxi', capacity: 4 },
-      { name: 'Wheelchair Accessible', capacity: 2 }
-    ],
-    features: [
-      'Licensed taxi drivers',
-      'Upfront pricing',
-      'Pay with card or cash',
-      'Airport queue access',
-      'Wheelchair accessible vehicles',
-      'Pair & Pay with taxi meter'
-    ],
-    availability: '65+ US cities'
-  },
-  {
-    id: 'juno',
-    name: 'Juno',
-    description: 'Driver-friendly rideshare with lower commission',
-    rating: 4.2,
-    totalReviews: 123456,
-    pricing: {
-      baseFare: 2.25,
-      perMile: 1.70,
-      perMinute: 0.32
-    },
-    vehicleTypes: [
-      { name: 'Juno', capacity: 4 },
-      { name: 'Juno XL', capacity: 6 },
-      { name: 'Juno Lux', capacity: 4 }
-    ],
-    features: [
-      'Lower driver commission',
-      'Stock options for drivers',
-      'Transparent pricing',
-      'Quality vehicle requirements',
-      'Driver ratings matter',
-      'Local focus'
-    ],
-    availability: 'New York City metro area'
-  },
-  {
-    id: 'ola',
-    name: 'Ola',
-    description: 'International rideshare with diverse options',
-    rating: 4.3,
-    totalReviews: 3456789,
-    pricing: {
-      baseFare: 1.80,
-      perMile: 1.40,
-      perMinute: 0.28
-    },
-    vehicleTypes: [
-      { name: 'Mini', capacity: 4 },
-      { name: 'Prime Sedan', capacity: 4 },
-      { name: 'Prime SUV', capacity: 6 },
-      { name: 'Auto', capacity: 3 },
-      { name: 'Bike', capacity: 1 }
-    ],
-    features: [
-      'Multiple payment options',
-      'Share ride option',
-      'Corporate services',
-      'Safety features with SOS',
-      'Outstation rides',
-      'Rental packages'
-    ],
-    availability: '250+ cities in India, Australia, UK'
-  },
-  {
-    id: 'grab',
-    name: 'Grab',
-    description: 'Southeast Asian super app for rides and more',
-    rating: 4.4,
-    totalReviews: 5678901,
-    pricing: {
-      baseFare: 1.50,
-      perMile: 1.30,
-      perMinute: 0.22
-    },
-    vehicleTypes: [
-      { name: 'GrabCar', capacity: 4 },
-      { name: 'GrabCar Plus', capacity: 6 },
-      { name: 'GrabShare', capacity: 2 },
-      { name: 'GrabBike', capacity: 1 },
-      { name: 'Premium', capacity: 4 }
-    ],
-    features: [
-      'Super app with food delivery',
-      'GrabPay wallet integration',
-      'Rewards program',
-      'Insurance coverage',
-      'Scheduled rides',
-      'Multiple service options'
-    ],
-    availability: '500+ cities across Southeast Asia'
-  },
-  {
-    id: 'didi',
-    name: 'DiDi',
-    description: 'Leading mobility platform from China',
-    rating: 4.2,
-    totalReviews: 8901234,
-    pricing: {
-      baseFare: 2.00,
+      baseFare: 25.00,
       perMile: 1.50,
-      perMinute: 0.30
+      perMinute: 0.00
     },
     vehicleTypes: [
-      { name: 'Express', capacity: 4 },
-      { name: 'Premier', capacity: 4 },
-      { name: 'Luxe', capacity: 4 },
-      { name: 'DiDi Share', capacity: 2 }
+      { name: 'Private Van', capacity: 8 },
+      { name: 'Luxury SUV', capacity: 6 },
+      { name: 'Group Crafter', capacity: 10 },
+      { name: 'Coach Bus', capacity: 50 }
     ],
     features: [
-      'AI-powered matching',
-      'Multi-language support',
-      'In-trip recording for safety',
-      'Emergency assistance',
-      'Carbon offset program',
-      'Loyalty rewards'
-    ],
-    availability: '4,000+ cities globally'
-  },
-  {
-    id: 'bolt',
-    name: 'Bolt',
-    description: 'European rideshare with competitive rates',
-    rating: 4.3,
-    totalReviews: 2345678,
-    pricing: {
-      baseFare: 2.00,
-      perMile: 1.55,
-      perMinute: 0.28
-    },
-    vehicleTypes: [
-      { name: 'Bolt', capacity: 4 },
-      { name: 'Comfort', capacity: 4 },
-      { name: 'XL', capacity: 6 },
-      { name: 'Green', capacity: 4 }
-    ],
-    features: [
-      'Low-cost rides',
-      'Electric vehicle options',
-      'Women safety features',
-      'Business accounts',
-      'Scheduled rides',
-      'No hidden fees'
-    ],
-    availability: '500+ cities in 45+ countries'
-  },
-  {
-    id: 'wingz',
-    name: 'Wingz',
-    description: 'Scheduled airport rides with professional drivers',
-    rating: 4.6,
-    totalReviews: 89012,
-    pricing: {
-      baseFare: 5.00,
-      perMile: 2.00,
-      perMinute: 0.40
-    },
-    vehicleTypes: [
-      { name: 'Sedan', capacity: 4 },
-      { name: 'SUV', capacity: 6 }
-    ],
-    features: [
-      'Scheduled rides only',
-      'Airport specialists',
-      'Professional drivers',
+      'Meet & Greet included',
       'Flight tracking',
-      'Fixed pricing',
-      'Meet and greet service'
+      'Cold bottled water',
+      'No waiting charges',
+      'Bilingual drivers',
+      '24/7 customer support'
     ],
-    availability: '30+ US airports'
+    availability: 'Cancun, Playa del Carmen, Tulum'
   },
   {
-    id: 'blacklane',
-    name: 'Blacklane',
-    description: 'Premium chauffeur service worldwide',
+    id: 'happy-shuttle',
+    name: 'Happy Shuttle Cancun',
+    description: 'Customer-focused shuttle service with friendly, experienced drivers',
+    rating: 4.8,
+    totalReviews: 28900,
+    pricing: {
+      baseFare: 20.00,
+      perMile: 1.45,
+      perMinute: 0.10
+    },
+    vehicleTypes: [
+      { name: 'Toyota Hiace', capacity: 10 },
+      { name: 'Suburban', capacity: 6 },
+      { name: 'Transit Van', capacity: 14 }
+    ],
+    features: [
+      'Easy online booking',
+      'Certified drivers',
+      'Private transportation only',
+      'Payment on arrival available',
+      'Free child seats',
+      'Official airport permit'
+    ],
+    availability: 'Cancun Airport & Riviera Maya'
+  },
+  {
+    id: 'etransfers',
+    name: 'eTransfers',
+    description: 'Budget-friendly and efficient airport transfers and shuttles',
     rating: 4.7,
-    totalReviews: 156789,
+    totalReviews: 22100,
     pricing: {
-      baseFare: 10.00,
-      perMile: 3.50,
-      perMinute: 0.60
+      baseFare: 18.00,
+      perMile: 1.35,
+      perMinute: 0.05
     },
     vehicleTypes: [
-      { name: 'Business Class', capacity: 3 },
-      { name: 'Business Van', capacity: 5 },
-      { name: 'First Class', capacity: 3 }
+      { name: 'Standard Van', capacity: 8 },
+      { name: 'Luxury SUV', capacity: 5 },
+      { name: 'Group Van', capacity: 12 }
     ],
     features: [
-      'Professional chauffeurs',
-      'Premium vehicles',
-      'Carbon neutral',
-      'Flight tracking',
-      'Business travel focused',
-      '1-hour free wait time'
+      'Best price guarantee',
+      'Instant confirmation',
+      'Travel insurance included',
+      'GPS monitoring',
+      'No hidden fees',
+      'Accepts crypto payments'
     ],
-    availability: '300+ cities in 50+ countries'
+    availability: 'Cancun, Tulum, Akumal'
+  },
+  {
+    id: 'cancun-airport-transportations',
+    name: 'Cancun Airport Transportations',
+    description: 'Official-style private transportation with extensive fleet options',
+    rating: 4.6,
+    totalReviews: 18200,
+    pricing: {
+      baseFare: 22.00,
+      perMile: 1.60,
+      perMinute: 0.00
+    },
+    vehicleTypes: [
+      { name: 'VW Transporter', capacity: 8 },
+      { name: 'Suburban Luxury', capacity: 6 },
+      { name: 'Cadillac Escalade', capacity: 5 },
+      { name: 'Limo', capacity: 8 }
+    ],
+    features: [
+      'Luxury options available',
+      'Shopping stop option (1hr)',
+      'Amenities included',
+      'Bilingual staff',
+      'Welcome sign service',
+      'Sanitized vehicles'
+    ],
+    availability: 'Cancun Hotel Zone & Riviera Maya'
+  },
+  {
+    id: 'cancun-shuttle',
+    name: 'Cancun Shuttle',
+    description: 'Experienced shuttle operator serving the region for over 15 years',
+    rating: 4.5,
+    totalReviews: 12500,
+    pricing: {
+      baseFare: 19.50,
+      perMile: 1.55,
+      perMinute: 0.00
+    },
+    vehicleTypes: [
+      { name: 'Shared Shuttle', capacity: 12 },
+      { name: 'Private Van', capacity: 9 },
+      { name: 'VIP SUV', capacity: 5 }
+    ],
+    features: [
+      'Shared ride options',
+      'Reliable service',
+      'Early booking discounts',
+      'Certified federal drivers',
+      'Full A/C vehicles',
+      'Door-to-door service'
+    ],
+    availability: 'Airport, Playa Mujeres, Tulum'
+  },
+  {
+    id: 'thomas-more',
+    name: 'Thomas More Travel',
+    description: 'Premium travel agency transport service with high service standards',
+    rating: 4.4,
+    totalReviews: 8900,
+    pricing: {
+      baseFare: 28.00,
+      perMile: 1.80,
+      perMinute: 0.00
+    },
+    vehicleTypes: [
+      { name: 'Standard Transfer', capacity: 8 },
+      { name: 'Luxury Transfer', capacity: 4 },
+      { name: 'Accessible Van', capacity: 6 }
+    ],
+    features: [
+      'Agency backed reliability',
+      'In-resort desks',
+      'Excursion bundles',
+      'Uniformed staff',
+      'Premium fleet',
+      'Personalized attention'
+    ],
+    availability: 'Key Resorts & Cancun Area'
+  },
+  {
+    id: 'caribbean-transfers',
+    name: 'Caribbean Transfers',
+    description: 'Specialized in personalized Caribbean vacation transportation',
+    rating: 4.3,
+    totalReviews: 5400,
+    pricing: {
+      baseFare: 24.00,
+      perMile: 1.40,
+      perMinute: 0.15
+    },
+    vehicleTypes: [
+      { name: 'Private Van', capacity: 7 },
+      { name: 'Luxury Suburban', capacity: 5 },
+      { name: 'Sprinter', capacity: 16 }
+    ],
+    features: [
+      'Custom itineraries',
+      'Group specialists',
+      'Wedding transportation',
+      'On-time guarantee',
+      'Beverages available',
+      'Direct contact drivers'
+    ],
+    availability: 'Riviera Maya & Puerto Morelos'
+  },
+  {
+    id: 'bestday',
+    name: 'BestDay',
+    description: 'Major travel booking platform offering comprehensive transfer services',
+    rating: 4.2,
+    totalReviews: 45000,
+    pricing: {
+      baseFare: 21.00,
+      perMile: 1.50,
+      perMinute: 0.10
+    },
+    vehicleTypes: [
+      { name: 'Shared Van', capacity: 14 },
+      { name: 'Private Sedan', capacity: 3 },
+      { name: 'Private Van', capacity: 8 }
+    ],
+    features: [
+      'Package deals available',
+      'Huge fleet network',
+      'Hotel + Transfer options',
+      '24hr airport booth',
+      'Multilingual app',
+      'Loyalty points'
+    ],
+    availability: 'All Mexico Tourist Destinations'
+  },
+  {
+    id: 'cancun-airport-transportation',
+    name: 'Cancun Airport Transportation',
+    description: 'Dedicated airport-to-hotel shuttle service provider',
+    rating: 4.5,
+    totalReviews: 15300,
+    pricing: {
+      baseFare: 23.00,
+      perMile: 1.55,
+      perMinute: 0.00
+    },
+    vehicleTypes: [
+      { name: 'Standard Van', capacity: 9 },
+      { name: 'Luxury SUV', capacity: 6 },
+      { name: 'Limo', capacity: 8 }
+    ],
+    features: [
+      'Flight monitoring',
+      'Immediate departure',
+      'Baby seat included',
+      'Taxes included',
+      'Private service',
+      'Insured vehicles'
+    ],
+    availability: 'Cancun, Playa, Tulum'
   }
 ];
